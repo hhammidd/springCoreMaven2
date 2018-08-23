@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context= "http://www.springframework.org/schema/context"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <!-- annotation config AnnotationConfig-->
+    <!-- <context:component-scan base-package="com.spring.springCore.xmlConfigWithClassPath.annotationConfig.model"></context:component-scan> -->
+
+    <!-- xml config -->
+    <!-- <bean id = "vehicle" class="com.spring.springCore.xmlConfigWithClassPath.xmlConfig.model.Car"></bean> -->
+
+    <!-- BeanProperty we have variable brand in the class that should add property here in xml babe-->
+    <!-- <bean id="tyre" class="com.spring.springCore.xmlConfigWithClassPath.beanProperty.model.Tyre">
+
+    </bean> -->
+
+    <!-- constructor Injection inside the bean change and the object will assigned by constructor -->
+    <!-- <context:component-scan base-package="com.spring.springCore.xmlConfigWithClassPath.constructorInjection.model"></context:component-scan>
+     <bean id="tyre" class="com.spring.springCore.xmlConfigWithClassPath.constructorInjection.model.Tyre">
+        <constructor-arg value="MRF"></constructor-arg>
+    </bean> -->
+
+    <!-- Autowired Annotation -->
+    <context:component-scan base-package="com.spring.springCore.xmlConfigWithClassPath.autoWiredAnnotation.model"></context:component-scan>
+    <bean id="tyre" class="com.spring.springCore.xmlConfigWithClassPath.autoWiredAnnotation.model.Tyre">
+    </bean>
+
+
+
+
+</beans>

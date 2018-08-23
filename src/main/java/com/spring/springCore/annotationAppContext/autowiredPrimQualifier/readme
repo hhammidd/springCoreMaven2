@@ -1,0 +1,13 @@
+AnnotationConfig without @Bean
+1. add @Component in POJO
+2. add @ComponentScan(basePackages = "Package of POJO" to the AppConfig
+
+By default the name of the component is the same as class but you can change :
+@Component("Mysamsung")
+
+Problem :
+if 2 class implement 1 interface will be error if not mentioning :
+@Primary
+or
+in Samsung.java use
+@Qualifier("mediatech)

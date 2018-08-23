@@ -1,0 +1,20 @@
+Why we need AOP?
+15 statements in Alien Component is Business Logic
+You cancel non Business logic statements and get separated class as Aspect
+1. @Aspect
+
+2. Advice
+what? When I call show method I want to call log() in @Aspect class
+ - @Before
+ - @After
+ - @Around
+ - @Before
+
+3. PointCut
+where?
+@Before("execution(public void show())")
+
+4. add @Component to @Aspect class
+5. add @EnableAspectJAutoProxy
+
+Note: helper and Alien should be in same package

@@ -1,0 +1,7 @@
+here we use AnnotationConfigApplicationContext()
+No use of spring.xml here instead we will use AppConfig
+see how use @Bean for instead of xml
+in AppConfig you will have Beans
+
+Is it possible cancel Beans and they working?
+See in AutowiredPrim package example
