@@ -1,4 +1,4 @@
-package com.spring.springAOP.telusko;
+package com.spring.springAOP.teluskoTut;
 
 
 import org.aspectj.lang.annotation.Aspect;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 @EnableAspectJAutoProxy
-public class Helper   {
+public class Helper {
 
     @Before("execution(public void show())")
     public void log() {
