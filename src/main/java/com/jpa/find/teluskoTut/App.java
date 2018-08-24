@@ -1,6 +1,6 @@
-package com.jpa.teluskoTut;
+package com.jpa.find.teluskoTut;
 
-import com.jpa.teluskoTut.model.Alien;
+import com.jpa.find.teluskoTut.model.Alien;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

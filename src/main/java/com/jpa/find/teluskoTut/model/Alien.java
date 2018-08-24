@@ -1,4 +1,4 @@
-package com.jpa.teluskoTut.model;
+package com.jpa.find.teluskoTut.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

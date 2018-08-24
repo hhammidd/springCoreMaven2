@@ -8,7 +8,7 @@
     <artifactId>SpingCore</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>
@@ -38,6 +38,47 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.9.1</version>
         </dependency>
+
+        <!-- Spring MVC-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.0.8.RELEASE</version>
+        </dependency>
+
+    <!-- JPA POM need 2 dependancy : 1. Hibernate 2. Mysql Connector-->
+        <!--hibernate dep -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.3.5.Final</version>
+        </dependency>
+
+        <!-- Mysql Connector: Note : Please check the version of my sql in your pc -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.12</version>
+        </dependency>
+
+        <!--Spring data JPA dependancies  -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>2.0.9.RELEASE</version>
+        </dependency>
     </dependencies>
+
+    <!--This is just for the spring-data-jpa -->
+    <repositories>
+        <repository>
+            <id>spring-libs-release</id>
+            <name>Spring Release</name>
+            <url>https://repo.spring.io/libs-release</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
