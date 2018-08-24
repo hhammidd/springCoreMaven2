@@ -1,4 +1,4 @@
-package com.hibernate.hibernateTest.model;
+package com.hibernate.saveHibernate.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

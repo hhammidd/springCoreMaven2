@@ -1,16 +1,18 @@
-package com.jpa.find.teluskoTut.model;
+package com.hibernate.fetchHibernate.model;
 
-
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "alien")
 public class Alien {
 
     @Id
     private int aid;
     private String aname;
+    @Column(name = "tech")
     private String tech;
 
     public int getAid() {
@@ -37,5 +39,12 @@ public class Alien {
         this.tech = tech;
     }
 
-
+    @Override
+    public String toString() {
+        return "Alien{" +
+                "aid=" + aid +
+                ", aname='" + aname + '\'' +
+                ", tech='" + tech + '\'' +
+                '}';
+    }
 }

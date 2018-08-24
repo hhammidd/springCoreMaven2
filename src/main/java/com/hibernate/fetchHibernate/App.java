@@ -1,4 +1,4 @@
-package com.hibernate.annotations;
+package com.hibernate.fetchHibernate;
 
 import com.jpa.find.teluskoTut.model.Alien;
 import org.hibernate.Session;
@@ -10,10 +10,6 @@ public class App {
     public static void main(String[] args) {
         Alien a = new Alien();
 
-        a.setAid(1);
-        a.setAname("hamid");
-        a.setTech("java");
-
         Configuration con = new Configuration().configure().addAnnotatedClass(Alien.class);
 
         SessionFactory sf = con.buildSessionFactory();
@@ -21,9 +17,12 @@ public class App {
 
         // Start transaction
         Transaction tx = session.beginTransaction();
-        session.save(a);
+
+        a = (Alien) session.get(Alien.class , 1);
         // Stop Transaction
         tx.commit();
+
+        System.out.println(a);
 
 
     }
