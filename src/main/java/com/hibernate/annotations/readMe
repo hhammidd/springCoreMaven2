@@ -1,0 +1,6 @@
+we change the annotation in the model: there are 3 levels:
+1. Entity name :@Entity(name = "alien")
+2. Class name :
+3. table name :@Table(name = "alien")
+4. column name : @Column(name = "tech")
+5.
