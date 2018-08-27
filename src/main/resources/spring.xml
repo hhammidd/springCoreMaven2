@@ -26,11 +26,15 @@
     </bean> -->
 
     <!-- Autowired Annotation -->
-    <context:component-scan base-package="com.spring.springCore.xmlConfigWithClassPath.autoWiredAnnotation.model"></context:component-scan>
+    <!-- <context:component-scan base-package="com.spring.springCore.xmlConfigWithClassPath.autoWiredAnnotation.model"></context:component-scan>
     <bean id="tyre" class="com.spring.springCore.xmlConfigWithClassPath.autoWiredAnnotation.model.Tyre">
-    </bean>
+    </bean> -->
 
+    <!--sprind DataJpaTest -->
+    <!-- <context:component-scan base-package="com.spring.springData.springDataJpaTest.service"></context:component-scan>
+    <bean id="tyre" class="com.spring.springData.springDataJpaTest.service.Tyre" /> -->
 
-
-
+    <!--spDataJpaTest -->
+    <context:component-scan base-package="com.spring.springData.springDataJpaTest.service"></context:component-scan>
+    <bean id="userRepository" class="com.spring.springData.springDataJpaTest.dao.repo.UsersRepository" />
 </beans>

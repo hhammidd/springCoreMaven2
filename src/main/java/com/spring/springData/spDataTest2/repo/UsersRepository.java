@@ -1,7 +1,7 @@
-package com.spring.springData.springDataJpaTest.dao.repo;
+package com.spring.springData.spDataTest2.repo;
 
 
 public interface UsersRepository {
-    String findAll();
+    void findAll();
     // xxxx===============================================
 }

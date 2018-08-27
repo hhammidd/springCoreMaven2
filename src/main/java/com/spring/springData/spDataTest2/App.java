@@ -1,17 +1,10 @@
-package com.spring.springData.springDataJpaTest;
+package com.spring.springData.spDataTest2;
 
-import com.spring.springCore.xmlConfigWithClassPath.autoWiredAnnotation.model.Car;
-
-import com.spring.springData.springDataJpaTest.model.Users;
-import com.spring.springData.springDataJpaTest.service.UserService;
+import com.spring.springData.spDataTest2.service.UserService;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import java.util.List;
-
-@EnableJpaRepositories(basePackages = "com.spring.springData.springDataTest.dao.repo")
+//@EnableJpaRepositories(basePackages = "com.spring.springData.springDataTest.dao.repo")
 public class App {
     public static void main(String[] args) {
         //java config
