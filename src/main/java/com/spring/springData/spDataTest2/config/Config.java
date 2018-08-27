@@ -6,8 +6,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @Configuration
-@ComponentScan(basePackages = "com.spring.springData.springDataJpaTest")
-//@EnableJpaRepositories("com.spring.springData.springDataJpaTest.dao.repo")
+@ComponentScan(basePackages = "com.spring.springDataJpa.springDataJpaTest")
+//@EnableJpaRepositories("com.spring.springDataJpa.springDataJpaTest.dao.repo")
 public class Config {
 }
 */

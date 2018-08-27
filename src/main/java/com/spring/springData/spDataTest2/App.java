@@ -4,7 +4,7 @@ import com.spring.springData.spDataTest2.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-//@EnableJpaRepositories(basePackages = "com.spring.springData.springDataTest.dao.repo")
+//@EnableJpaRepositories(basePackages = "com.spring.springDataJpa.springDataTest.dao.repo")
 public class App {
     public static void main(String[] args) {
         //java config

@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import java.util.List;
 
-@EnableJpaRepositories(basePackages = "com.spring.springData.springDataTest.dao.repo")
+@EnableJpaRepositories(basePackages = "com.spring.springDataJpa.springDataTest.dao.repo")
 public class App {
     public static void main(String[] args) {
         //java config

@@ -31,10 +31,10 @@
     </bean> -->
 
     <!--sprind DataJpaTest -->
-    <!-- <context:component-scan base-package="com.spring.springData.springDataJpaTest.service"></context:component-scan>
-    <bean id="tyre" class="com.spring.springData.springDataJpaTest.service.Tyre" /> -->
+    <!-- <context:component-scan base-package="com.spring.springDataJpa.springDataJpaTest.service"></context:component-scan>
+    <bean id="tyre" class="com.spring.springDataJpa.springDataJpaTest.service.Tyre" /> -->
 
     <!--spDataJpaTest -->
-    <context:component-scan base-package="com.spring.springData.springDataJpaTest.service"></context:component-scan>
-    <bean id="userRepository" class="com.spring.springData.springDataJpaTest.dao.repo.UsersRepository" />
+    <context:component-scan base-package="com.spring.springDataJpa.springDataJpaTest.service"></context:component-scan>
+    <bean id="userRepository" class="com.spring.springDataJpa.springDataJpaTest.dao.repo.UsersRepository" />
 </beans>
